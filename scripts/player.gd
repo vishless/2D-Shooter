@@ -3,9 +3,12 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+var Health = 100
 
 func _ready():
 	print('Player is ready!')
+	print('Speed ', SPEED)
+	print('Health ', Health)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
